@@ -15,4 +15,9 @@ body{
         var(--c3)
     );
     font-family: sans-serif;
+    cursor: default;
+}
+
+.html::-webkit-scrollbar {
+    display: none;
 }

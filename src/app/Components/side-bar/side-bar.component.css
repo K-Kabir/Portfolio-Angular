@@ -1,6 +1,10 @@
+.container{
+    height: 100%;
+}
+
 .column{
     width: 100%;
-    margin-top: 10vh;
+    height: inherit;
     display: flex;
     flex-direction: column;
     background-color: var(--nav_color);

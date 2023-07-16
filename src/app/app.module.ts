@@ -7,6 +7,8 @@ import { SideBarComponent } from './Components/side-bar/side-bar.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
 import { EducationComponent } from './Components/education/education.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { appIntersectionObserver } from 'src/Directives/IntersectionObserver.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { EducationComponent } from './Components/education/education.component';
     SideBarComponent,
     HomeComponent,
     AboutComponent,
-    EducationComponent
+    EducationComponent,
+    FooterComponent,
+    appIntersectionObserver
   ],
   imports: [
     BrowserModule

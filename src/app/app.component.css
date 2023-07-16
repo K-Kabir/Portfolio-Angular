@@ -12,7 +12,6 @@
 }
 
 #sidebar{
-    background-color: grey;
     margin-left: 3vw;
     display: block;
     width: 15vw;
@@ -26,4 +25,11 @@ section{
     margin: 5%;
     padding: 5%;
     font-size: 2em;
+}
+
+#home{
+    margin-top: 0;
+}
+
+#footer{
 }
