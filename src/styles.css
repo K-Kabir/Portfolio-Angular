@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --c1: #CC95C0;
+    --c2: #DBD4B4;
+    --c3: #7AA1D2;
+    --nav_color: #025A4E;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(
+        130deg,
+        var(--c1),
+        var(--c2),
+        var(--c3)
+    );
+    font-family: sans-serif;
+}
