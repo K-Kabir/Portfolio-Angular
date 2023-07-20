@@ -5,13 +5,6 @@ import { AfterViewInit, Directive, ElementRef, OnInit, Renderer2 } from "@angula
 })
 
 export class appIntersectionObserver implements OnInit, AfterViewInit{
-    observer = new IntersectionObserver((entries) => {
-            // let hasClass = this.el.nativeElement.classList.contains('sticking');
-            let hasClass = entries[0].isIntersecting;
-            this.renderer[hasClass ? 'removeClass' : 'addClass' ](this.el.nativeElement.firstChild,'sticking');
-        }
-    )
-
     scrollWatcher !: Element
 
     constructor(private el:ElementRef, private renderer:Renderer2){}
@@ -24,4 +17,12 @@ export class appIntersectionObserver implements OnInit, AfterViewInit{
     ngAfterViewInit(): void {
         this.observer.observe(this.scrollWatcher)
     }
+
+    observer = new IntersectionObserver((entries) => {
+        // let hasClass = this.el.nativeElement.classList.contains('sticking');
+        console.log(entries[0].isIntersecting);
+        let hasClass = !entries[0].isIntersecting;
+        this.renderer[hasClass ? 'removeClass' : 'addClass' ](this.el.nativeElement,'sticking');
+        this.renderer[hasClass ? 'removeClass' : 'addClass' ](this.el.nativeElement.firstChild.firstChild,'sticking');
+    }, {rootMargin: "20px"})
 }

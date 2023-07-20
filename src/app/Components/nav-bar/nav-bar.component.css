@@ -1,28 +1,40 @@
 .container{
-    width: 100%;
-    height: 55px;
-    padding: 15px;
-    padding-bottom: 10px;
+    width: 80%;
+    /* height: 60%;
+    margin-top: 20vh;
+    margin-bottom: 20vh; */
+    margin: 20%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     transition: 400ms;
 }
 
-.sticking{
+/* .sticking{
     background-color: rgba(255, 255, 255, 0.61);
     backdrop-filter: blur(50px);
     width: 60%;
     border-radius: 50vh;
     margin-top: 15px;
     margin-bottom: 10px;
+} */
+
+.sticking>a{
+    width: 100%;
+    height: clamp(100px, 15vh, 150px);
+    /* padding-top: 15px;
+    padding-bottom: 10px; */
+    text-decoration: none;
+    text-align: left;
+    color: var(--nav_color);
+    font-size: 3rem;
+    transition: translate 500ms ease, font-size 500ms ease;
+}
+
+.sticking>a:hover{
+    translate: 0 -0.7rem;
+    font-size: 3.7rem;
 }
 
 a{
-    width: 19%;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-decoration: none;
-    text-align: center;
-    color: var(--nav_color);
-    font-size: 1.5em;
+    
 }

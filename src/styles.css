@@ -6,6 +6,10 @@
     --nav_color: #025A4E;
 }
 
+*{
+    cursor: default;
+}
+
 body{
     margin: 0;
     background: linear-gradient(
@@ -15,9 +19,8 @@ body{
         var(--c3)
     );
     font-family: sans-serif;
-    cursor: default;
 }
 
-.html::-webkit-scrollbar {
+html::-webkit-scrollbar {
     display: none;
 }
