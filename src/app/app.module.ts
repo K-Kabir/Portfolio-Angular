@@ -9,6 +9,9 @@ import { AboutComponent } from './Components/about/about.component';
 import { EducationComponent } from './Components/education/education.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { appIntersectionObserver } from 'src/Directives/IntersectionObserver.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { SkillsComponent } from './Components/skills/skills.component';
+import { WorkComponent } from './Components/work/work.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { appIntersectionObserver } from 'src/Directives/IntersectionObserver.dir
     AboutComponent,
     EducationComponent,
     FooterComponent,
-    appIntersectionObserver
+    appIntersectionObserver,
+    SkillsComponent,
+    WorkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
